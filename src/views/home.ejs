@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+  
+    <div class="form-input">
+        <div class="container">
+            <div class="row">
+                <div class="user-info-container">
+                    <form method="POST" action="/user/create/user">
+                      <div class="container mt-4">
+                        
+                        <div class="text-center">
+                          <h2 class="text-primary text-uppercase">Thêm nhân viên</h2>
+                        </div>
+              
+                        <div class="row mt-3 d-flex justify-content-center">                            
+                          <div class="mb-3 col-3">
+                            <label for="userFullName" class="form-label">Họ tên</label>
+                            <input type="text" class="form-control" id="userFullName" name="fullName" value="" required/>
+                          </div>
+                          <!-- <div class="mb-3 col-3">
+                            <label for="userName" class="form-label">Tên người dùng</label>
+                            <input type="text" class="form-control" id="userName" name="userName" required/>
+                          </div> -->
+                          <div class="mb-3 col-3">
+                            <label for="DOB" class="form-label">Ngày sinh</label>
+                            <input type="date" class="form-control" placeholder="dd-mm-yyyy" id="DOB" name="userDOB" value="" required/>
+                          </div>
+                          <div class="mb-3 col-3">
+                            <label for="phone" class="form-label">Số điện thoại</label>
+                            <input type="tel" class="form-control" id="phone" name="userPhone" required/>
+                          </div>
+                        </div>
+                        
+                        <div class="row mt-3 row mt-3 d-flex justify-content-center">
+                          
+                          <div class="mb-3 col-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="userEmail" required/>
+                          </div>
+                          <div class="mb-3 col-3">
+                            <label for="job" class="form-label">Nghề nghiệp</label>
+                            <select id="job" class="form-select">
+                              <option selected hidden>Hãy chọn nghề nghiệp</option>
+                              
+                            </select>
+                          </div>
+                          <div class="mb-3 col-3">
+                            <label for="department" class="form-label">Khoa Phòng</label>
+                            <select id="department" class="form-select">
+                              <option selected hidden>Hãy chọn khoa phòng</option>
+                            </select>
+                          </div>
+                          <!-- <div class="mb-3 col-3">
+                            <label for="userRole" class="form-label">Vai trò</label>
+                            <select name="userRole" id="userRole" class="form-select">
+                              <option selected hidden>Hãy chọn vai trò</option>
+                             
+                            </select>
+                          </div> -->
+                        </div>
+              
+                        <div class="row mt-3 row mt-3 d-flex justify-content-center">
+                          
+                          <div class="mb-3 col-3">
+                            <label for="userImage" class="form-label">Ảnh chân dung</label>
+                            <input type="file" class="form-control" id="userImage" name="userImage">
+                          </div>
+                        </div>
+                    
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-6 d-flex justify-content-center mt-3">
+                            <button type="submit" class="btn btn-primary">Tạo người dùng</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    
+</body>
+</html>
