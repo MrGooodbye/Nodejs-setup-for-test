@@ -6,3 +6,4 @@ nếu bạn muốn định nghĩa các models mới
 tên cột của model quan hệ (tên cột này sẽ tương thích với tên model, vd: tên thuộc tính là nhanvienId tức là sẽ tương thích với models nhanvien.js) 
 + Id [Id này bắt buộc phải gõ như vậy, tại sequelize nó thích như vậy :))]
 5/ Trong project này, ở file userService có một số hàm không export ra ngoài nhằm để hỗ trợ bạn lấy getDate và format theo đúng định dạng trên csdl, hãy đọc code để hiểu thêm về cách dùng
+6/ Sau khi đã vào 1 router với phương thức get, controller render ra 1 file ejs và 1 cục data, bạn cần phải biết cách dùng vòng lặp trong ejs (có thể đọc qua tại page ejs) để có thể apply data này vào file ejs
